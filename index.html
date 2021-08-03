@@ -12,10 +12,11 @@
     />
   </head>
   <body>
-    <ul id="character-list"></ul>
+    <button class="play" onclick="playAudio()" type="button">Play</button>
+    <audio src="audio/Island Song.mp3" id="myAudio"></audio>
+
     <button id="get-characters">Characters</button>
     <div id="output"></div>
-
     <div class="toggle">
       <button id="one"></button> <button id="two"></button>
       <button id="three"></button><button id="four"></button>
@@ -25,12 +26,13 @@
       <form>
         <textarea></textarea>
         <div class="btn">
-          <input type="submit" value="Comment" />
+          <input type="button" value="Comment" />
           <button class="cancel">Cancel</button>
         </div>
       </form>
     </div>
 
+    <button class="pause" onclick="pauseAudio()" type="button">Pause</button>
 
     <script src="index.js"></script>
   </body>

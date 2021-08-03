@@ -27,13 +27,15 @@ function buttonFour() {
     'url(imgs/advbackground4.jpg)';
 }
 
-//document.addEventListener('DOMContentLoaded', () => {
-//let a = new Audio('./audio/adventure-time-theme-song.mp3');
-//const audio = document.getElementById('theme-song');
-//console.log(audio)
-// a.play();
-//});
-//document.getElementById('theme-song').play(); /*
+var x = document.getElementById('myAudio');
+
+function playAudio() {
+  x.play();
+}
+
+function pauseAudio() {
+  x.pause();
+}
 
 function getCharacters() {
   fetch('http://localhost:3000/characters')
@@ -50,3 +52,6 @@ function getCharacters() {
       document.getElementById('output').innerHTML = output;
     });
 }
+//forEach calls a function that iterates through each element in an array
+
+// fetch call returns a promise. we use .then to handle the reponse we recieve from the call and convert it to json

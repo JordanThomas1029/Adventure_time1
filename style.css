@@ -9,7 +9,7 @@ body {
 }
 
 #get-characters {
-  background: purple;
+  background: yellow;
   z-index: 10;
   padding: 30px;
   border-radius: 10px;
@@ -76,4 +76,18 @@ input,
 input {
   background-color: red;
   color: #fff;
+}
+
+.play {
+  font-family: 'Adventure Time Logo', sans-serif;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.pause{
+   font-family: 'Adventure Time Logo', sans-serif;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
